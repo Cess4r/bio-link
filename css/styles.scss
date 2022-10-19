@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body{
+    height: 100%;
+    background-image: url(../pict/backG/back6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 2em 0 3em 0;
+        color: white;
+        
+        img{
+            width: 6em;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+        h1{
+            text-align: center;
+            font-size: medium;
+            background-color: black;
+            width: 100px;
+            padding: 4px ;
+            border-radius: 1em;
+            border: 1px solid rgb(207, 203, 203);
+            
+        }
+
+    }
+
+    .container{
+        text-align: center;
+        margin: 0 8%;
+        
+        ul{
+            margin: auto;
+            display: flexbox;
+            max-width: 300px;
+             
+            li{
+                
+                border-radius: 2em;
+                padding: 1em;
+                margin: 1.6em 0 ;
+                list-style: none;
+                background: rgba(250, 241, 241, 0.63);
+            }   
+
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+    
+
+}
+
