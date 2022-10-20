@@ -5,9 +5,37 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
-        <title>Document</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', ()=>{
+                VANTA.BIRDS({
+                    el: "#vanta",
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    scale: 1.00,
+                    scaleMobile: 1.00, 
+                    backgroundAlpha:0.0,
+                    color1: 0x0,
+                    color2: 0x0,
+                    quantity: 3.00
+                })
+
+                setTimeout(()=>{
+                    const main = document.querySelector('main')
+                    main.style.opacity = 1;
+                    main.style.filter = 'blur(0px)' 
+                }, 1000)
+            })
+            
+        </script>
+        <title>@cess4r.ml</title>
     </head>
     <body>
+        <div id="vanta"></div>
         <main>
             <header>
                 <div class="prof"><img src="pict/foto perfil.png" alt=""></div>
