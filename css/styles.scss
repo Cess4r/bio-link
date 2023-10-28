@@ -6,18 +6,17 @@
 
 body{
  
-    &::before{
+    /* &::before{
         position: fixed;
         top: 0;
         left: 0;
         content: '';
         width: 100%;
         height: 100%;
-        background-image: url(../pict/backG/back9.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-    }
+    } */
 
     #vanta{
         z-index: 0;
@@ -34,6 +33,10 @@ body{
         opacity: 0;
         filter: blur(10px);
         transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+       /*  max-width: 400px;
+        border-radius: 1em;
+        background-color: rgba(190, 233, 255, 0.664); */
+        
     }
 
     header{
@@ -47,24 +50,26 @@ body{
         
         img{
             width: 6em;
-            border: 2px solid black;
+           
             border-radius: 50%;
         }
         h1{
             text-align: center;
             font-size: medium;
-            background-color: black;
-            width: 100px;
+            color: black;
+            background-color: white;
+            width: fit-content;
             padding: 4px ;
             border-radius: 1em;
-            border: 1px solid rgb(207, 203, 203);
+            margin-top: 7px;
+            /* border: 1px solid rgb(207, 203, 203); */
             
         }
 
     }
 
     .container{
-        text-align: center;
+        text-align: center; 
         margin: 0 8%;
         
         ul{
@@ -80,7 +85,7 @@ body{
                 border-radius: 2em;
                 padding: 1em 4.5em;
                 margin: 1.6em 0 ;
-                background: rgba(245, 236, 236, 0.562);
+                background: white;
                 backdrop-filter: blur(5px);
                 display: flex;
                 justify-content: space-evenly;
