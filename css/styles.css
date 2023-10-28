@@ -45,8 +45,9 @@ body header {
   color: white;
 }
 body header img {
-  width: 6em;
+  width: 6.5em;
   border-radius: 50%;
+  border: 2px solid white;
 }
 body header h1 {
   text-align: center;
